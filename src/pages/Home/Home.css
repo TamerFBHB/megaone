@@ -1,7 +1,17 @@
-.firstPage{
+
+.home{
+    background-color: #1E1E1E;
     position: relative;
     overflow: hidden;
-    height: calc(100vh - 100px);
+    min-height: 100vh;
+}
+
+::-webkit-scrollbar {
+    background-color: #171717;
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background-image:linear-gradient(to top , #fc3959 , rgb(200, 121, 2));
 }
 .info{
     width: 400px;
@@ -13,7 +23,7 @@
 }
 .bread{
     width: 150px;
-    top: 70%;
+    top: 60%;
 }
 .pitza{
     position: absolute;
@@ -44,7 +54,7 @@
     width: 60%;
     height: 80px;
     background-color: rgb(57, 57, 57);
-    margin-top: 50px;
+    margin-top: 80px;
     border-radius: 40px;
     display: flex;
     justify-content: center;
@@ -97,8 +107,8 @@
         display: none;
     }
     .plate{
-        left: 20%;
-        top: 50%;
+        left: 15%;
+        top: 15%;
     }
     .social{
         display: none;
@@ -111,14 +121,14 @@
         transform: translateY(-40% );
     }
     .info{
-        margin-top: 30%;
+        margin-top: 40%;
         width: 600px;
     }
     .info h1{
-        font-size: 60px;
+        font-size: 65px;
     }
     .tree{
-        top: 15%;
+        top: 20%;
         right: 20%;
     }
 }
@@ -143,14 +153,10 @@
     }
 }
 @media (max-width:420px){
-    .info{
-        margin-top: 30%;
-        width: 90%;
-    }
     .pitza{
         width: 100px;
         height: 100px;
-        top: 80%;
+        top: 70%;
         right: -30px;
         transform: translateY(-60% );
     }
@@ -162,12 +168,14 @@
     .info{
         width: 80%;
         text-align: center;
-        margin-top: 100px;
+        margin-top: 60px;
     }
     .info h1{
         font-size: 50px;
     }
     .bread{
         width: 100px;
+        top: 60%;
+        left: 0px;
     }
 }

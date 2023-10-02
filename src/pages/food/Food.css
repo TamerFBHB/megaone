@@ -1,0 +1,60 @@
+.FoodPage{
+    background-color: rgb(38, 38, 38);
+    min-height: 100vh;
+}
+.Basic{
+    background: linear-gradient(to right, #d70404 10%, #ff9100f3 60%);
+	-webkit-background-clip:text;
+	-webkit-text-fill-color: transparent;
+    font-size: 20px;
+}
+.delicious{
+    width: 350px;
+    font-family: 'Grand Hotel';
+    font-size: 65px;
+    color: white;
+}
+.icon{
+    font-size: 30px;
+    color: red;
+    transition: 0.5s;
+}
+.parent:hover .icon{
+    transform: translateY(-10px);
+}
+.circle-price{
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: red;
+    z-index: 100;
+}
+.hover-trigger:hover .imageData{
+    transform: scale(1.05);
+}
+.hover-trigger:hover .title{
+    color: #ff4a03;
+}
+.FoodOption{
+    margin: 80px 30px;
+    display: flex;
+    justify-content: center;
+    color: white;  
+}
+.FoodOption a{
+    background-image: linear-gradient(to left, #ff5a00 20%, #fc2547 80%);  
+    width: 50%; 
+    text-align: center; 
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 30px;
+    padding: 10px 0;
+    transition: 0.5s;
+}
+.FoodOption a:hover {
+    background-image: linear-gradient(to right, #ff5a00 20%, #fc2547 80%);  
+    transition: 0.5s;
+}
