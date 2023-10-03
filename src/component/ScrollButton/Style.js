@@ -9,5 +9,5 @@ bottom: 40px;
 font-size: 3rem;
 z-index: 1;
 cursor: pointer;
-color: white
+color: white;
 `

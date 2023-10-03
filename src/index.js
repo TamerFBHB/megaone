@@ -1,12 +1,12 @@
 import ReactDOM from "react-dom/client";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import React from "react";
-import MainPage from "./pages/mainPage/MainPage.js";
+import Home from "./pages/Home/Home.jsx";
 
 const router =createBrowserRouter([
   {
     path: "/",
-    element: <MainPage />,
+    element: <Home />,
     errorElement : <h1> Sorry .........................</h1>
   },
   

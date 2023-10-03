@@ -58,3 +58,11 @@
     background-image: linear-gradient(to right, #ff5a00 20%, #fc2547 80%);  
     transition: 0.5s;
 }
+@media (max-width:992px) {
+    .delicious .icon{
+        font-size: 15px;
+    }
+    .delicious h2{
+        font-size: 20px;
+    }
+}

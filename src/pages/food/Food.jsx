@@ -9,15 +9,15 @@ import { Link } from "react-router-dom";
 
 const Food = ({ VFood }) => {
   return (
-    <section className="FoodPage px-40 py-10" ref={VFood}>
-      <div className="py-28 flex justify-between items-center">
+    <section className="FoodPage md:px-4 lg:px-40 py-10" ref={VFood}>
+      <div className="py-28 grid grid-cols-2 justify-between items-center">
         <div>
           <h3 className="Basic ">Basic info about online food</h3>
           <h1 className="delicious leading-none py-4 ">
             delicious food is our aim.
           </h1>
         </div>
-        <div className="flex gap-10 ">
+        <div className="grid grid-cols-3 md:gap-3 gap-10 ">
           <div className="flex flex-col justify-center items-center gap-1 text-white text-lg parent">
             <LiaBrushSolid className="icon" />
             <h2>1052+</h2>

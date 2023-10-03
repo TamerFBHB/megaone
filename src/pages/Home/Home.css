@@ -1,16 +1,19 @@
 
-.home{
-    background-color: #1E1E1E;
+
+.fristPage{
     position: relative;
     overflow: hidden;
-    min-height: 100vh;
+    height: 100vh;
+    width: 100vw ;
+    background-color: #1E1E1E;
+    border: none;
 }
 
-::-webkit-scrollbar {
+.home::-webkit-scrollbar {
     background-color: #171717;
     width: 10px;
 }
-::-webkit-scrollbar-thumb{
+.home::-webkit-scrollbar-thumb{
     background-image:linear-gradient(to top , #fc3959 , rgb(200, 121, 2));
 }
 .info{

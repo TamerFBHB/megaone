@@ -1,76 +1,81 @@
-.bigScreen{
-    z-index: 100;
-    width: 100%;
-    background-color: #1E1E1E;
+.bigScreen {
+  z-index: 100;
+  width: 100%;
+  background-color: #1e1e1e;
+  margin: 0;
 }
-.transfor{
-    top: -100px;
+.transfor {
+  top: -100px;
 }
-.apeare{
-    position: sticky;
-    left: 0;
-    right: 0;
-    top: 0; 
-    /* width: 100vw;    */
-    background-color: #171717d8;
-    transition: 0.9s;
+.apeare {
+  position: sticky;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: #171717d8;
+  transition: 0.9s;
 }
 
-.smallScreen{
+.smallScreen {
+  display: none;
+}
+.screenLinks {
+  display: none;
+}
+.hover-parent:hover .hover-child {
+  width: 100%;
+  transition: 0.3s;
+}
+.target {
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+  transform: translateY(15px);
+  z-index: 100;
+}
+.trigger:hover .target {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0px);
+}
+.hover-target {
+  transition: 0.5s;
+}
+.hover-trigger:hover .hover-target {
+  padding-left: 5px;
+}
+.screenLinks {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background-image: url(../../images/side-menu.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.links {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.882),
+    rgba(5, 5, 5, 0.552)
+  );
+}
+
+@media (max-width: 992px) {
+  .bigScreen {
     display: none;
-}
-.screenLinks{
-    display: none;
-}
-.hover-parent:hover .hover-child{
-    width: 100%;
-    transition: 0.3s;
-}
-.target{
-    visibility: hidden;
-    opacity: 0;
-    transition: 0.5s;
-    transform: translateY(15px);
-    z-index: 100;
-}
-.trigger:hover .target{
-    visibility: visible;
-    opacity: 1;
-    transform: translateY(0px);
-}
-.hover-target{
-    transition: 0.5s;
-}
-.hover-trigger:hover .hover-target{
-    padding-left: 5px;
-}
-.screenLinks{    
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100vh;
-    background-image: url(../../images/side-menu.jpg);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;  
-    }
-.links{
-    background-image: linear-gradient(to bottom , rgba(0, 0, 0, 0.882)  ,
-                    rgba(5, 5, 5, 0.552) );
-}
-
-@media (max-width:992px) {
-    .bigScreen{
-        display: none;
-    }
-    .smallScreen{
-        display: block;
-        z-index: 5;
-    }
-    .screenLinks{
-        position: fixed;
-        display: block;
-        z-index: 5;
-    }
-
+  }
+  .smallScreen {
+    display: block;
+    margin: 0;
+    width: 100vw;
+    background-color: #1e1e1e;
+    z-index: 5;
+  }
+  .screenLinks {
+    position: fixed;
+    display: block;
+    z-index: 5;
+  }
 }
