@@ -1,6 +1,6 @@
 .FoodPage{
     background-color: rgb(38, 38, 38);
-    min-height: 100vh;
+    min-height: 100%;
 }
 .Basic{
     background: linear-gradient(to right, #d70404 10%, #ff9100f3 60%);
@@ -30,7 +30,7 @@
     width: 80px;
     border-radius: 50%;
     background-color: red;
-    z-index: 100;
+    z-index: 5;
 }
 .hover-trigger:hover .imageData{
     transform: scale(1.05);
@@ -39,7 +39,7 @@
     color: #ff4a03;
 }
 .FoodOption{
-    margin: 80px 30px;
+    margin: 80px 0px;
     display: flex;
     justify-content: center;
     color: white;  
@@ -64,5 +64,13 @@
     }
     .delicious h2{
         font-size: 20px;
+    }
+    .FoodOption a{
+        width:75% ;
+    }
+}
+@media (max-width:420px) {
+    .FoodOption a{
+        width:95% ;
     }
 }

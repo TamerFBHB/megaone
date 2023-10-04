@@ -1,19 +1,21 @@
-
-
+.home{
+    background-color: #1E1E1E;
+    position: relative;
+    
+}
 .fristPage{
     position: relative;
     overflow: hidden;
     height: 100vh;
-    width: 100vw ;
+    width: 100% ;
     background-color: #1E1E1E;
-    border: none;
 }
 
-.home::-webkit-scrollbar {
+::-webkit-scrollbar {
     background-color: #171717;
     width: 10px;
 }
-.home::-webkit-scrollbar-thumb{
+::-webkit-scrollbar-thumb{
     background-image:linear-gradient(to top , #fc3959 , rgb(200, 121, 2));
 }
 .info{
@@ -69,7 +71,7 @@
     transform: translateY(-50%);
     right: 10px;
     height: 60px;
-    width: 300px;
+    width: 35%;
     border-radius: 30px;
     display: flex;
     justify-content: center;

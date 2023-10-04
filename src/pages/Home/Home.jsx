@@ -16,6 +16,7 @@ import DownloadApp from "../DownloadApp/DownloadApp";
 import AboutUs from "../AboutUs/AboutUs";
 import NavBar from "../../component/NavBar/NavBar";
 import ScrollingButton from "../../component/ScrollButton/ScrollingButton";
+import ScrollToTop from "../../component/ScrollToTop"
 
 const Home = () => {
   const VFood = useRef();
@@ -26,9 +27,9 @@ const Home = () => {
     window.scrollTo({ top: elementRef.current.offsetTop, behavior: "smooth" });
   };
   return (
-    <div className="home">
+    <div className="home ">
       <ScrollingButton />
-
+      <ScrollToTop />
       <NavBar
         scrollToSection={scrollToSection}
         VFood={VFood}

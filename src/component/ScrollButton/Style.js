@@ -7,7 +7,7 @@ width: fit-content;
 right: 20px ;
 bottom: 40px;
 font-size: 3rem;
-z-index: 1;
+z-index: 100;
 cursor: pointer;
 color: white;
 `

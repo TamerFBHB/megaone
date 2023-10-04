@@ -14,7 +14,7 @@ import { motion } from "framer-motion";
 
 const NavBar = ({ scrollToSection,VFood ,VDownloadApp,VAboutUs}) => {
     // *** to move screen links ***
-    const [isAnimating, setAnimating] = useState("100vh");
+    const [isAnimating, setAnimating] = useState("100%");
 
     // *** start apeare navbar ****
     const [visible, setVisible] = useState(false);
@@ -162,35 +162,35 @@ const NavBar = ({ scrollToSection,VFood ,VDownloadApp,VAboutUs}) => {
                 </div>
             </header>
             <motion.div
-                className="screenLinks"
+                className="screenLinks "
                 initial={{ y: "0" }}
                 animate={{ y: isAnimating }}
                 transition={{ duration: 0.5, type: "tween" }}
             >
-                <div className="w-full h-screen relative  flex flex-col justify-center items-center links">
+                <div className="w-full h-full relative  flex flex-col justify-center items-center links">
                     <AiOutlineClose
                         className="absolute top-10 right-10 text-2xl text-white"
-                        onClick={() => setAnimating("100vh")}
+                        onClick={() => setAnimating("100%")}
                     />
                     <img src={logoSmall} alt="" className="my-5" />
                     <div className=" flex flex-col justify-center items-center my-5">
                         <NavLink
                             href="#"
-                            onClick={()=>{scrollToSection(VFood);  setAnimating("100vh")}}
+                            onClick={()=>{scrollToSection(VFood);  setAnimating("100%")}}
                             className=" my-4 font-bold text-2xl text-white"
                         >
                             Browse Food
                         </NavLink>
                         <NavLink
                             href="#"
-                            onClick={()=>{scrollToSection(VDownloadApp);  setAnimating("100vh")}}
+                            onClick={()=>{scrollToSection(VDownloadApp);  setAnimating("100%")}}
                             className=" my-4 font-bold text-2xl text-white"
                         >
                             Download App
                         </NavLink>
                         <NavLink
                             href="#"
-                            onClick={()=>{scrollToSection(VAboutUs) ;  setAnimating("100vh")}}
+                            onClick={()=>{scrollToSection(VAboutUs) ;  setAnimating("100%")}}
                             className=" my-4 font-bold text-2xl text-white"
                         >
                             About Us

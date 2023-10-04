@@ -10,14 +10,14 @@ import { Link } from "react-router-dom";
 const Food = ({ VFood }) => {
   return (
     <section className="FoodPage md:px-4 lg:px-40 py-10" ref={VFood}>
-      <div className="py-28 grid grid-cols-2 justify-between items-center">
-        <div>
+      <div className="py-28 grid md:gap-4 md:grid-cols-1 md:justify-center md:items-center lg:grid-cols-2 justify-between items-center">
+        <div className="text-center">
           <h3 className="Basic ">Basic info about online food</h3>
-          <h1 className="delicious leading-none py-4 ">
+          <h1 className="delicious leading-none py-4 md:w-full ">
             delicious food is our aim.
           </h1>
         </div>
-        <div className="grid grid-cols-3 md:gap-3 gap-10 ">
+        <div className="grid sm:grid-cols-1 md:grid-cols-3 md:gap-3 gap-10 ">
           <div className="flex flex-col justify-center items-center gap-1 text-white text-lg parent">
             <LiaBrushSolid className="icon" />
             <h2>1052+</h2>
@@ -35,7 +35,7 @@ const Food = ({ VFood }) => {
           </div>
         </div>
       </div>
-      <div className=" grid grid-cols-3 gap-6">
+      <div className=" grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {Data.map((item) => {
           return (
             <>
