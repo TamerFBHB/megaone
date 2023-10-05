@@ -40,8 +40,7 @@ const NavBar = ({ scrollToSection,VFood ,VDownloadApp,VAboutUs}) => {
         <>
             <header
                 className={`bigScreen ${visible ? "apeare" : ""}
-                                    ${visib ? "transfor" : ""  }`}
-            >
+                                    ${visib ? "transfor" : ""  }`}>
                 <div className="flex justify-between py-2 lg:px-40 md:px-2">
                     <img src={logo} alt="" />
                     <div className="flex items-center">

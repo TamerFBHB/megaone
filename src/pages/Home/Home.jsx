@@ -17,6 +17,9 @@ import AboutUs from "../AboutUs/AboutUs";
 import NavBar from "../../component/NavBar/NavBar";
 import ScrollingButton from "../../component/ScrollButton/ScrollingButton";
 import ScrollToTop from "../../component/ScrollToTop"
+import { motion } from "framer-motion"
+
+
 
 const Home = () => {
   const VFood = useRef();
@@ -40,22 +43,26 @@ const Home = () => {
       <div className="fristPage md:px-4 lg:px-40 flex flex-col items-center ">
         {/* *** start social ***  */}
         <div className="w-5 absolute inset-16 inset-y-1/4 text-white social">
-          <FaFacebookF className="my-6 cursor-pointer" />
-          <FaTwitter className="my-6 cursor-pointer" />
-          <FaLinkedinIn className="my-6 cursor-pointer" />
-          <FaInstagramSquare className="my-6 cursor-pointer" />
+          <FaFacebookF className="my-6 cursor-pointer hover:scale-150 duration-500" />
+          <FaTwitter className="my-6 cursor-pointer hover:scale-150 duration-500" />
+          <FaLinkedinIn className="my-6 cursor-pointer hover:scale-150 duration-500" />
+          <FaInstagramSquare className="my-6 cursor-pointer hover:scale-150 duration-500" />
         </div>
         {/* *** end social ***  */}
         {/* *** start details *** */}
         <div className="info h-50 text-white ">
-          <h3 className="mt-16">Lorem ipsum dolor sit amet purus</h3>
-          <h1 className="text-6xl my-7 px-4 ">
+          <motion.h3 className="mt-16"
+          initial={{translateY:"25px" , opacity:0}} animate={{translateY:0 ,opacity:1}} transition={{delay:0.2 ,duration:1,type : "tween"}}>
+          Lorem ipsum dolor sit amet purus</motion.h3>
+          <motion.h1 className="text-6xl my-7 px-4 "
+          initial={{scale:0.7 , opacity:0.5}} animate={{scale:1,opacity:1}} transition={{duration:1,type : "tween"}}>
             Delicious Food at your door step
-          </h1>
-          <h3 className="leading-relaxed">
+          </motion.h1>
+          <motion.h3 className="leading-relaxed"
+          initial={{translateY:"15px" , opacity:0}} animate={{translateY:0 ,opacity:1}} transition={{delay:0.5 ,duration:1,type : "tween"}}>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Est labore,
             fugiat excepturi accusantium deserunt{" "}
-          </h3>
+          </motion.h3>
         </div>
         {/* *** end details *** */}
         {/* *** input *** */}
