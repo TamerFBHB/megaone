@@ -6,7 +6,6 @@ import { BsCupHotFill, BsStarFill } from "react-icons/bs";
 import { FaRegGem } from "react-icons/fa";
 import Data from "./Data";
 import { Link } from "react-router-dom";
-import Carousel from '../../component/Carousel/carousel.component';
 
 const Food = ({ VFood }) => {
   return (
@@ -83,7 +82,7 @@ const Food = ({ VFood }) => {
       </section>
       
       <div className="banner flex items-center">
-        <Carousel />
+        
       </div>
     </div>
   );
