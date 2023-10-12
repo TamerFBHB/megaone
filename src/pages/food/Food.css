@@ -5,8 +5,9 @@
 .Basic {
   background: linear-gradient(to right, #d70404 10%, #ff9100f3 60%);
   -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 20px;
 }
 .delicious {
   width: 350px;

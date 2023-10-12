@@ -32,7 +32,7 @@ const NavBar = ({ scrollToSection,VFood ,VDownloadApp,VAboutUs}) => {
     window.addEventListener("scroll", function () {
         if (window.scrollY > 600) {setstate(0);  } 
         if (window.scrollY > 2600) {setstate(1); }     
-        if (window.scrollY > 3000) {setstate(2);}
+        if (window.scrollY > 3500) {setstate(2);}
         else if (window.scrollY <= 400) { setstate(4);}        
     });
      // *** end scale span ***

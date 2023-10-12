@@ -1,4 +1,43 @@
-.forthPage{
-    background-color: rgb(158, 230, 2);
-    height: 100%;
+.Basic {
+    background: linear-gradient(to right, #f60202 10%, #ff9100f3 60%);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 20px;
+  }
+  .about{
+    font-family: "Grand Hotel";
+    font-size: 65px;
+    color: white;
+    width: 75%;
+    line-height: 1;
+}
+.cycle{
+    fill: url(#blue-gradient);
+    animation: scale 1s linear  infinite ;
+}
+.toto:hover .cycle{
+    fill: white;
+    animation: none ;
+}
+.trigger:hover .targett{
+    fill: url(#blue-gradient);
+    animation: scale 1s linear  infinite ;
+}
+
+@keyframes scale {
+    0%{
+        transform :scale(1);
+    }
+    30%{
+        transform :scale(1.05);
+    }
+    60%{
+        transform :scale(1.1);
+    }
+    90%{
+        transform :scale(1.05);
+    }
+    
 }
