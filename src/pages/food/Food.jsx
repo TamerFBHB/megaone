@@ -6,7 +6,6 @@ import { BsCupHotFill, BsStarFill } from "react-icons/bs";
 import { FaRegGem } from "react-icons/fa";
 import Data from "./Data";
 import { Link } from "react-router-dom";
-import Carousel from "../../component/carousel/Carousel";
 
 const Food = ({ VFood }) => {
   return (
@@ -78,7 +77,7 @@ const Food = ({ VFood }) => {
       
       <div className="banner  ">
         <div className="md:w-full lg:w-1/2 h-full" >
-        <Carousel  />
+        
         </div>
       </div>
     </div>
