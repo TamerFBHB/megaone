@@ -5,5 +5,9 @@ import photo4 from "../../images/client4.jpg"
 
 
 
-    const images = [ photo1,photo2,photo3,photo4];
+    const images = [
+        
+       photo1
+        
+        ,photo2,photo3,photo4];
 export default images ;

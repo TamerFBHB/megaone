@@ -26,11 +26,15 @@ export default function Carousel({ slides }) {
         // }}
       >
         {images.map((s) => {
-          return <img src={s} alt="" className="rounded-full"/>;
+          return <>
+          <div className="w-full h-full">
+        <img src={s} alt="" className="w-full h-full "/>
+        </div>
+        </>;
         })}
       </div>
 
-      <div className="absolute top-0 h-full w-full justify-between items-center flex text-white px-10 text-3xl">
+      <div className=" absolute top-0 h-full w-full justify-between items-center flex text-white md:px-0 lg:px-10 text-3xl">
         <button onClick={previousSlide}>
           <BsFillArrowLeftCircleFill />
         </button>

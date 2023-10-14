@@ -10,7 +10,7 @@ import Carousel from "../../component/carousel/Carousel";
 
 const Food = ({ VFood }) => {
   return (
-    <div className="py-20">
+    <div className="">
       <section className="FoodPage md:px-4 lg:px-40 py-10" ref={VFood}>
         <div className="py-28 grid md:gap-4 md:grid-cols-1 md:justify-center md:items-center lg:grid-cols-2 justify-between items-center">
           <div className="text-center">
@@ -42,34 +42,28 @@ const Food = ({ VFood }) => {
             return (
               <>
                 <div class="hover-trigger relative rounded overflow-hidden border  bg-black mx-3 md:mx-0 lg:mx-0">
-                  <div className="circle-price p-0 bg-gradient-to-r from-red-700 to-orange-400">
+                  <div className="circle-price p-0 bg-gradient-to-r from-pink-700 to-orange-400">
                     <div className="text-white flex flex-col pt-7 items-center leading-none">
                       <p>{item.price}</p>
                       <p>min</p>
                     </div>
                   </div>
                   <div className="overflow-hidden ">
-                    <img
-                      class="w-full bg-cover imageData duration-500"
-                      src={item.image}
-                      alt=""
-                    />
+                    <img src={item.image} alt="" className="w-full h-full imageData duration-500"/>
                   </div>
-                  <div class="px-4 py-2 ">
-                    <div class="pt-2 flex justify-between items-center">
-                      <h1 class="text-xl text-white font-medium title duration-500">
-                        {item.title}
-                      </h1>
+                  <div className="m-5">
+                    <div className="my-2 flex justify-between items-center ">
+                      <h1 className="text-white title">{item.title}</h1>
                       <div className="flex gap-2 ">
-                        <BsStarFill className="text-yellow-300" />
-                        <BsStarFill className="text-yellow-300" />
-                        <BsStarFill className="text-yellow-300" />
-                        <BsStarFill className="text-yellow-300" />
-                        <BsStarFill className="text-yellow-300" />
+                        <BsStarFill className="text-yellow-500"/>
+                        <BsStarFill className="text-yellow-500"/>
+                        <BsStarFill className="text-yellow-500"/>
+                        <BsStarFill className="text-yellow-500"/>
+                        <BsStarFill className="text-yellow-500"/>
                       </div>
                     </div>
-                    <div class="pt-2 mb-2 text-md text-gray-300">
-                      {item.details}
+                    <div>
+                      <h3 className="text-white"> {item.details}</h3>
                     </div>
                   </div>
                 </div>
@@ -83,7 +77,7 @@ const Food = ({ VFood }) => {
       </section>
       
       <div className="banner  ">
-        <div className="w-1/2 h-full" >
+        <div className="md:w-full lg:w-1/2 h-full" >
         <Carousel  />
         </div>
       </div>
