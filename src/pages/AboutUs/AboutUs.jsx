@@ -12,7 +12,7 @@ const AboutUs = ({ VAboutUs }) => {
                     <h2 className="Basic  pb-10">Basic info about food delivery.</h2>
                     <h1 className="about ">we are behind the delicious food delivery.</h1>
                 </div>
-                <div className="w-1/2 text-white basis-52 grow mt-20 text-center lg:text-start">
+                <div className="w-1/2 px-5 text-white basis-52 grow mt-20 text-center lg:text-start">
                     <p className="text-base">
                         Curabitur mollis bibendum luctus. Duis suscipit vitae dui sed
                         suscipit. Vestibulum auctor nunc vitae diam eleifend, in maximus

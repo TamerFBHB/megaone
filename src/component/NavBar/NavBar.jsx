@@ -195,7 +195,7 @@ const NavBar = ({ scrollToSection,VFood ,VDownloadApp,VAboutUs}) => {
                             About Us
                         </NavLink>
                     </div>
-                    <p className=" font-bold text-md text-white"> +1 631 123 4567</p>
+                    <p className=" w-full text-center font-bold text-md text-white"> +1 631 123 4567</p>
                     <p className=" font-bold text-md text-white"> email@website.com</p>
                     <div className="my-5 flex gap-5">
                         <FaFacebookF className="text-white cursor-pointer" />
@@ -203,10 +203,14 @@ const NavBar = ({ scrollToSection,VFood ,VDownloadApp,VAboutUs}) => {
                         <FaYoutube className="text-white cursor-pointer" />
                         <AiFillInstagram className="text-white cursor-pointer" />
                     </div>
-                    <p className="flex gap-2 text-white p-5 justify-center border-b-2">
-                        <BsFillCCircleFill />
-                        2023 MegaOne. Made With <br />
-                        .. Tamer Fouad Beshara ..
+                    <p className=" w-full flex flex-col items-center gap-2 text-white py-5 justify-center border-b-2">
+                       <div className=" w-full flex justify-center items-center gap-2"> 
+                         <BsFillCCircleFill />
+                         2023 MegaOne. Made With 
+                       </div>
+                       <div className=" w-full text-center">
+                         <p >.. Tamer Fouad Beshara ..</p>
+                       </div>
                     </p>
                 </div>
             </motion.div>

@@ -17,7 +17,7 @@ const Footer = () => {
                 <FaInstagramSquare className="text-white text-1xl cursor-pointer hover:scale-150 duration-500" />
             </div>
             <div>
-                <p className='text-center text-white my-10'>© 2023 MegaOne. Made With Love By Themesindustry</p>
+                <p className='text-center text-white my-10'>© 2023 MegaOne. Made With Love By Tamer Fouad</p>
             </div>
         </div>
     );

@@ -51,8 +51,8 @@ const Food = ({ VFood }) => {
                     <img src={item.image} alt="" className="w-full h-full imageData duration-500"/>
                   </div>
                   <div className="m-5">
-                    <div className="my-2 flex justify-between items-center ">
-                      <h1 className="text-white title">{item.title}</h1>
+                    <div className="my-2 flex justify-between items-center  ">
+                      <h1 className="text-white title w-full ">{item.title}</h1>
                       <div className="flex gap-2 ">
                         <BsStarFill className="text-yellow-500"/>
                         <BsStarFill className="text-yellow-500"/>

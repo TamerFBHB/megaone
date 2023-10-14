@@ -1,9 +1,12 @@
 .Basic {
-    background: linear-gradient(to right, #d70404 10%, #ff9100f3 60%);
+    background: linear-gradient(to right, #f60202 10%, #ff9100f3 60%);
     -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
+    text-align: center;
     font-size: 20px;
-  }
+    }
 .download{
     font-family: "Grand Hotel";
     font-size: 65px;
