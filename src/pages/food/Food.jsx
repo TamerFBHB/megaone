@@ -22,17 +22,17 @@ const Food = ({ VFood }) => {
             <div className="flex flex-col justify-center items-center gap-1 text-white text-lg parent">
               <LiaBrushSolid className="icon" />
               <h2>1052+</h2>
-              <h2>Online Orders</h2>
+              <h2 className=" w-full text-center">Online Orders</h2>
             </div>
             <div className="flex flex-col justify-center items-center gap-1 text-white text-lg parent">
               <FaRegGem className="icon" />
               <h2>9800+</h2>
-              <h2>Satisfied Customers</h2>
+              <h2 className=" w-full text-center">Satisfied Customers</h2>
             </div>
             <div className="flex flex-col justify-center items-center gap-1 text-white text-lg parent">
               <BsCupHotFill className="icon" />
               <h2>3785+</h2>
-              <h2>Cup of Teas</h2>
+              <h2 className=" w-full text-center">Cup of Teas</h2>
             </div>
           </div>
         </div>
