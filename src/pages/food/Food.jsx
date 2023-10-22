@@ -76,8 +76,8 @@ const Food = ({ VFood }) => {
       </section>
       
       <div className="banner  ">
-        <div className="md:w-full lg:w-1/2 h-full" >
-        
+        <div className="flex " >
+        <h1 className="text">delicious food is our aim.</h1>
         </div>
       </div>
     </div>

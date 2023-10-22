@@ -203,15 +203,15 @@ const NavBar = ({ scrollToSection,VFood ,VDownloadApp,VAboutUs}) => {
                         <FaYoutube className="text-white cursor-pointer" />
                         <AiFillInstagram className="text-white cursor-pointer" />
                     </div>
-                    <p className=" w-full flex flex-col items-center gap-2 text-white py-5 justify-center border-b-2">
-                       <div className=" w-full flex justify-center items-center gap-2"> 
-                         <BsFillCCircleFill />
-                         2023 MegaOne. Made With 
-                       </div>
-                       <div className=" w-full text-center">
-                         <p >.. Tamer Fouad Beshara ..</p>
-                       </div>
-                    </p>
+                    <div className=" w-full flex flex-col items-center gap-2 text-white py-5 justify-center border-b-2">
+                        <div className=" w-full flex justify-center items-center gap-2"> 
+                            <BsFillCCircleFill />
+                            2023 MegaOne. Made With 
+                        </div>
+                        <div className=" w-full text-center">
+                            <p >.. Tamer Fouad Beshara ..</p>
+                        </div>
+                    </div>
                 </div>
             </motion.div>
         </>
